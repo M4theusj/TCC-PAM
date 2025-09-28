@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TCC_PAM.MainPage"
+             BackgroundColor="White"
+             NavigationPage.HasNavigationBar="False">
+
+    <Grid Padding="20" RowSpacing="0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="80" />
+        </Grid.RowDefinitions>
+
+        <ScrollView Grid.Row="0" VerticalOptions="FillAndExpand">
+            <VerticalStackLayout Spacing="20" Padding="0,8" HorizontalOptions="FillAndExpand">
+
+                <Frame HeightRequest="120" WidthRequest="120" CornerRadius="60" HasShadow="False" BackgroundColor="White" BorderColor="Transparent" Padding="6" HorizontalOptions="Center" VerticalOptions="Start">
+                    <Image Source="logo.png" Aspect="AspectFit" HorizontalOptions="Center" VerticalOptions="Center"/>
+                </Frame>
+
+                <VerticalStackLayout HorizontalOptions="Center" Spacing="0" Padding="0,0,0,4">
+                    <Label Text="Bem-Vindo" Style="{StaticResource TitleLabel}" />
+                    <Label Text="De Volta" Style="{StaticResource SubtitleLabel}" />
+                </VerticalStackLayout>
+
+                <Grid HorizontalOptions="FillAndExpand" HeightRequest="220">
+                    <Image Source="rectangle.png" Aspect="Fill" HorizontalOptions="FillAndExpand" VerticalOptions="Start" HeightRequest="220" />
+                    <VerticalStackLayout Padding="28,44,28,18" Spacing="14" VerticalOptions="Start">
+                        <Label Text="Dicas de uso" Style="{StaticResource CardTitleLabel}" />
+                        <Label Text="seja claro e objetivo com a sua pergunta" Style="{StaticResource CardTextLabel}" />
+                        <Label Text="siga o passo a passo" Style="{StaticResource CardTextLabel}" />
+                    </VerticalStackLayout>
+                </Grid>
+
+                <Border BackgroundColor="{StaticResource PrimaryBlue}" Stroke="{StaticResource PrimaryBlueDark}" StrokeThickness="3" HorizontalOptions="FillAndExpand" Margin="0,-28,0,0" Padding="0">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="0,0,18,18" />
+                    </Border.StrokeShape>
+                    <Button Text="pedir ajuda" BackgroundColor="Transparent" TextColor="White" FontAttributes="Bold" HeightRequest="96" FontSize="20" CornerRadius="0" HorizontalOptions="FillAndExpand" />
+                </Border>
+
+            </VerticalStackLayout>
+        </ScrollView>
+
+        <Grid Grid.Row="1" BackgroundColor="White" Padding="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <BoxView Grid.Row="0" WidthRequest="700" HeightRequest="1" BackgroundColor="Black" HorizontalOptions="FillAndExpand" VerticalOptions="Start" />
+
+            <Image Source="history.png" Grid.Column="0" Style="{StaticResource NavIconImage}" />
+
+            <Image Source="home.png" Grid.Column="1" Style="{StaticResource NavIconImage}" />
+
+            <Image Source="confi.png" Grid.Column="2" Style="{StaticResource NavIconImage}" />
+        </Grid>
+    </Grid>
+</ContentPage>
