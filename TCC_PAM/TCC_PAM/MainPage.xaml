@@ -14,7 +14,7 @@
         <ScrollView Grid.Row="0" VerticalOptions="FillAndExpand">
             <VerticalStackLayout Spacing="20" Padding="0,8" HorizontalOptions="FillAndExpand">
 
-                <Frame HeightRequest="120" WidthRequest="120" CornerRadius="60" HasShadow="False" BackgroundColor="White" BorderColor="Transparent" Padding="6" HorizontalOptions="Center" VerticalOptions="Start">
+                <Frame HeightRequest="200" WidthRequest="120" CornerRadius="60" HasShadow="False" BackgroundColor="White" BorderColor="Transparent" Padding="6" HorizontalOptions="Center" VerticalOptions="Start">
                     <Image Source="logo.png" Aspect="AspectFit" HorizontalOptions="Center" VerticalOptions="Center"/>
                 </Frame>
 
